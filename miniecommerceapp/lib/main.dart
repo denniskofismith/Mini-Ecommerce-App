@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miniecommerceapp/homepage.dart';
 import 'package:miniecommerceapp/models/shop.dart';
+import 'package:miniecommerceapp/pages/cart.dart';
 import 'package:miniecommerceapp/pages/intro_page.dart';
 import 'package:miniecommerceapp/pages/shop.dart';
 import 'package:miniecommerceapp/themes/lightmode.dart';
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes:  {
         '/intro_page': (context) => const IntroPage(),
-        '/shop_page': (context) => const ShopPage()
+        '/shop_page': (context) => const ShopPage(),
+        '/cart_page': (context) => const ShopCart(),
       },
       theme: lightmode,
        home: HomepageCommerce(),

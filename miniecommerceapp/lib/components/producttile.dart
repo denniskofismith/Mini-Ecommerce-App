@@ -14,6 +14,7 @@ class ProductTile extends StatelessWidget {
   // add to cart button pressed
 
   void addToCart(BuildContext context){
+  {
     showDialog(
       context: context,
        builder: (context) => AlertDialog(
@@ -34,6 +35,7 @@ class ProductTile extends StatelessWidget {
             ),
         ],
        ) );
+      }
   }
 
   @override
