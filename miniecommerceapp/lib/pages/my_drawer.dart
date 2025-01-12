@@ -52,7 +52,10 @@ class MyDrawer extends StatelessWidget {
       child: MyListTile(
                 icon: Icons.logout,
                  text: "Exit", 
-                 onTap: (){}
+                 onTap: (){
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/intro_page');
+                 }
                  ),
     ),
         ],
